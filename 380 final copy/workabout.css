@@ -1,0 +1,169 @@
+.bluestar, .st7{
+    fill:#7CCFDD;
+    animation: sparkle-float 2s infinite;
+  }
+  .nametext{
+    fill:#F16A40;
+
+  }
+  .st2{
+    fill:#23201C;
+  }
+  .speechbubble{
+    fill:none;
+    stroke:#FFF6E4;
+    stroke-width:5;
+    stroke-miterlimit:10;
+  }
+  .redcircle{
+    fill:#F5916C;
+  }
+  .st5{
+    display:inline;
+    fill:#23201C;
+    stroke:#FFF6E4;
+    stroke-width:3.8444;
+    stroke-miterlimit:10;
+  }
+  .st7{
+    display:inline;
+  }
+  .st8{
+    display:none;
+  }
+
+  @keyframes sparkle-float{
+    0% {transform: translate(0,0px);}
+    50%{transform: translate(0,7px);}
+    100% {transform: translate(0,-0px);}
+  }
+
+  @keyframes sidetoside{
+    0% {transform: translate(0px,0px);}
+    25%{transform: translate(7px,0px);}
+    75%{transform: translate(-0px,0px);}
+    100% {transform: translate(-7px,0px);}
+  }
+
+body{
+  background-color: #fff6e4;
+}
+
+p, ul, li {
+  font-family: "Caslon OS";
+  font-size: 1em;
+  line-height: 1.3em;
+  text-align: left;
+}
+
+nav li{
+  display : inline-block;
+  padding-right:60px;
+  padding-top: 60px;
+
+}
+nav ul{
+  text-align: center;
+  width:100%;
+  padding-right:40px;
+}
+
+a:link, a:visited {
+  color: #f5916c;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: .5s;
+  transition-timing-function: linear;
+}
+
+a:focus, a:hover {
+  color: #7ccfdd;
+  background-color: #F5916C;
+}
+
+#container {
+  width: 80%;
+  margin: auto;
+}
+
+main {
+  margin-top: 5em;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+footer {
+  margin-top: 2em;
+}
+
+img {
+  float: left;
+  padding-right: 2%;
+  padding-bottom: 0.5em;
+}
+
+@keyframes typing { from { width: 7; } }
+@keyframes blink{ 50% { border-color: transparent; } }
+
+h2 { 
+  font: bold 100% Caslon OS;
+  font-weight: normal;
+  color: #FFF6E4;
+  border-right: .1em solid;
+  width: 27ch; /* # of chars */
+  margin: 18.75em 23em;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 5s steps(35, end), blink .5s step-end infinite alternate;
+
+}
+
+.hi{
+    position: absolute;
+    margin-left:auto;
+    margin-right: auto;
+  }
+
+
+/*
+CSS FOR SLIDESHOW
+*/
+
+ body {
+        color:#ffffff;
+        margin:0;
+        padding:0;
+      }
+      
+      .slideshow-wrapper {
+        width:704px;
+        overflow:hidden;
+        margin: 0 auto;
+        padding-top: 20px;
+      }
+      .slideshow-wrapper ul {
+        margin:0;
+        padding:0;
+        width: 3600px; 
+        animation: slideshow 15s infinite;
+      }
+      .slides .slide-image {
+        width:704px;
+        display:inline-block;
+        margin:0;
+        padding:0;
+      }
+      .slides .slide-image img {
+        width: 100%;
+      }
+      .container {
+        background: #FFF6E4;
+      }
+      
+      @keyframes slideshow {
+        5%    { margin-left: 1%;}
+        20%   { margin-left: -100%;   }
+        40%   { margin-left: -200%; }
+        60%   { margin-left: -300%; }
+        80% {margin-left: -400%;}
+      }
